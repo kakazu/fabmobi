@@ -1,0 +1,41 @@
+%a.button.back{:href => "/projects/show", :style => "text-decoration: none;"} ←BACK
+%h2.title タイヤどうしよう
+.container-fluid
+  .row
+    .col-md-7.col-sm-7.pull-right
+      %p.resizeimage
+        = image_tag "disney.png"
+    .col-md-5.col-sm-5
+      .mybox{:style => "padding: 5px; display: inline-block"}
+        %h3.fborder 課題
+        %p{:style => "padding: 0 25px"} てきすとてきすとてきすとてきすとてきすとてきすとてきすとてきすとてきすとてきすとてきすとてきすとてきすとてきすとてきすと
+        %h3.fborder{:style => "margin-top: 15px"} 解決方法
+        %p{:style => "padding: 0 25px"} てきすとてきすとてきすとてきすとてきすとてきすとてきすとてきすとてきすとてきすとてきすとてきすとてきすとてきすとてきすとてきすと
+        %h3.fborder{:style => "margin-top: 15px"} 詳細
+        %p{:style => "padding: 0 25px"} てきすとてきすとてきすとてきすとてきすとてきすとてきすとてきすとてきすとてきすとてきすとてきすとてきすとてきすと
+.commentfield
+  .comment-box
+    ムファサのセリフ
+    %br
+      I’m only brave when I have to be. Being brave doesn’t mean you go looking for trouble.
+      %br
+        俺は勇敢にならないといけないときだけ勇敢なだけだ。勇敢とはトラブルを探し回ることじゃない。
+        .button{:style => "float: right"} Reply
+  .comment-box
+    ピノキオのセリフ
+    %br
+      Always let your conscience be your guide.
+      %br
+        いつだって自分の良心に従うんだ。
+        .button{:style => "float: right"} Reply
+  .comment-box
+    ジーニーのセリフ
+    %br
+      Today’s special moments are tomorrow’s memories.
+      %br
+        今日の特別な瞬間が明日の思い出になるんだ。
+        .button{:style => "float: right"} Reply
+  %p{:style => "font-size: 20px"} leave a comment
+  %form{:method => "post"}
+    %textarea{:cols => "50", :name => "comment", :placeholder => "Join the discussion", :rows => "10"}
+  %input#sbutton{:type => "submit", :value => "POST COMMENT"}

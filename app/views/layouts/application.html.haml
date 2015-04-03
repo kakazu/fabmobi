@@ -1,0 +1,33 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Fabmobi
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  %body
+    %nav#header
+      %ul
+        .float-left
+          %li
+            %a.navbar-brand{:href => "../"}
+              = image_tag "logo03.png", width: "164", height: "68"
+          %li
+            %a{:href => "", :title => ""} About
+          %li
+            %a{:href => "", :title => ""} Explore
+          %li
+            %a{:href => "", :title => ""} Shop
+          .clear
+        .form-box.float-right
+
+          .header-right
+            .table-cell.middle.search-box
+              %input.form-control{:placeholder => "Search", :type => "text"}
+        .clear
+
+    = yield
+
+    #footer
+      ©Copyright Fabmobi 2015

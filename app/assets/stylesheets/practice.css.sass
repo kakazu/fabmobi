@@ -1,0 +1,49 @@
+@charset "utf-8"
+
+.transitionbox
+  width: 300px
+  height: 250px
+  margin: 15px
+  position: relative
+  box-shadow: 0px 0px 10px #333
+  -webkit-box-shadow: #333
+  box-shadow: #333
+
+.transitionimg
+  width: 300px
+  height: 100px
+  transition: background-color 0.4s linear 0 , height 0.4s ease-out 0
+  overflow: hidden
+  position: absolute
+  z-index: 2
+  &:hover
+    background-color: #73e6e6
+    width: 300px
+    height: 200px
+    overflow: hidden
+  img
+    margin-top: -60px
+    transition: margin-top 0.4s
+    z-index: 2
+  &:hover > img
+    margin-top: 0px
+
+.transitionbox p
+  width: 300px
+  height: 200px
+  padding: 10px
+  box-sizing: border-box
+  position: absolute
+  top: 100px
+  z-index: 1
+  word-break: break-all
+  overflow: hidden
+
+.bottom
+  width: 300px
+  height: 50px
+  padding: 10px
+  box-sizing: border-box
+  position: absolute
+  bottom: 0
+  background: #ccc

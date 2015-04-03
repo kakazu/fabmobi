@@ -1,0 +1,210 @@
+%a.button.back{:href => "/", :style => "text-decoration: none;"} ←back to all ideas
+%h3.title title
+.container-fluid
+  .row
+    .col-md-8.col-sm-8
+      .imagebox
+        = image_tag "disney.png", class:"image"
+    .col-md-4.col-sm-4
+      .mybox
+        %p{:style => "margin:5px"}
+          Product Stage
+        %p{:style => "font-size: 20px; padding-left: 40px;"}
+          %span.glyphicon.glyphicon-user
+          →
+          %span.glyphicon.glyphicon-file{:style => "color: #bdb76b"}
+          →
+          %span.glyphicon.glyphicon-oil
+          →
+          %span.glyphicon.glyphicon-yen
+      .mybox{:style => "min-height: 100px;"}
+        %h3{:style => "font-size: 15px; font-weight: bolder; padding-top: 5px"} Project Manegement
+
+        = image_tag "logo03.png", class:"p-image"
+        %a{:href => "", :style => "display: inline-block;margin-top: 15px;"} Fabmobi
+        %p
+          ProjectManager
+      .mybox.clearfix.dbox{:style => ""}
+        %div{:style => "float: left; width: 50%"}
+          %div{:style => "color: #87cefa; font-weight: bold; font-size: 20px"}
+            111
+          %span.glyphicon.glyphicon-thumbs-up.like
+        .dborder{:style => "float: right; width: 50%"}
+          %div{:style => "color: #ffc247; font-weight: bold; font-size: 20px; padding: 0px 0px 7px"}
+            40
+          %span.glyphicon.glyphicon-star-empty
+      .mybox.clearfix.dbox{:style => ""}
+        %div{:style => "float: left; width: 50%"}
+          シェア
+        %div{:style => "float: right; width: 50%"}
+          ツイート
+%div{:style => "background-color: #d3d3d3"}
+  .buttonpad
+    .btn-group.btn-group-justified.nav-tabs{"aria-label" => "...", :role => "group"}
+      .btn-group{:role => "group"}
+        %a.btn.btn-default{"data-toggle" => "tab", :href => "#detail"} Detail
+      .btn-group.active{:role => "group"}
+        %a.btn.btn-default{"data-toggle" => "tab", :href => "#discussion"} Discussion
+      .btn-group{:role => "group"}
+        %a.btn.btn-default{"data-toggle" => "tab", :href => "#files"} Files
+  #myTabContent.tab-content
+    #detail.tab-pane.fade{:style => "padding: 2% 13%; background-color: #d3d3d3"}
+      .mybox{:style => "padding: 5px"}
+        %h3.fborder 課題
+        %p{:style => "padding: 0 25px"}
+          てきすとてきすとてきすとてきすとてきすとてきすとてきすとてきすとてきすとてきすと
+        %h3.fborder{:style => "margin-top: 15px"} 解決方法
+        %p{:style => "padding: 0 25px"}
+          てきすとてきすとてきすとてきすとてきすとてきすとてきすとてきすとてきすとてきすとてきすとてきすとてきすとてきすとてきすとてきすとてきすとてきすと
+        %h3.fborder{:style => "margin-top: 15px"} 詳細
+        %p{:style => "padding: 0 25px"}
+          てきすとてきすとてきすとてきすとてきすとてきすとてきすとてきすとてきすとてきすとてきすとてきすとてきすとてきすとてきすと
+    #discussion.tab-pane.fade.in.active{:style => "background-color: #d3d3d3"}
+      .addbuttonpad
+        %button.btn.btn-default{:onClick => "location.href='/discussions/new'", :type => "button"} Add　＋
+      .center{:style => "padding: 10px 0px"}
+        #card.js-masonry
+          %a{:href => "/discussions/show"}
+            .transitionbox.item
+              .transitionimg
+                = image_tag "neco.jpg", width:"300"
+              %p
+                Title -
+                texttexttexttexttexttexttexttexttexttext
+                texttexttexttetexttext
+              .bottom
+                %i.glyphicon.glyphicon-thumbs-up.like>
+                111
+          %a{:href => "/discussions/show"}
+            .transitionbox.item
+              .transitionimg
+                = image_tag "neco.jpg", width:"300"
+              %p
+                Title -
+                texttexttexttexttexttexttexttexttexttext
+                texttexttexttetexttext
+              .bottom
+                %i.glyphicon.glyphicon-thumbs-up.like>
+                111
+          %a{:href => "/discussions/show"}
+            .transitionbox.item
+              .transitionimg
+                = image_tag "neco.jpg", width:"300"
+              %p
+                Title -
+                texttexttexttexttexttexttexttexttexttext
+                texttexttexttetexttext
+              .bottom
+                %i.glyphicon.glyphicon-thumbs-up.like>
+                111
+          %a{:href => "/discussions/show"}
+            .transitionbox.item
+              .transitionimg
+                = image_tag "neco.jpg", width:"300"
+              %p
+                Title -
+                texttexttexttexttexttexttexttexttexttext
+                texttexttexttetexttext
+              .bottom
+                %i.glyphicon.glyphicon-thumbs-up.like>
+                111
+          %a{:href => "/discussions/show"}
+            .transitionbox.item
+              .transitionimg
+                = image_tag "neco.jpg", width:"300"
+              %p
+                Title -
+                texttexttexttexttexttexttexttexttexttext
+                texttexttexttetexttext
+              .bottom
+                %i.glyphicon.glyphicon-thumbs-up.like>
+                111
+          %a{:href => "/discussions/show"}
+            .transitionbox.item
+              .transitionimg
+                = image_tag "neco.jpg", width:"300"
+              %p
+                Title -
+                texttexttexttexttexttexttexttexttexttext
+                texttexttexttetexttext
+              .bottom
+                %i.glyphicon.glyphicon-thumbs-up.like>
+                111
+          %a{:href => "/discussions/show"}
+            .transitionbox.item
+              .transitionimg
+                = image_tag "neco.jpg", width:"300"
+              %p
+                Title -
+                texttexttexttexttexttexttexttexttexttext
+                texttexttexttetexttext
+              .bottom
+                %i.glyphicon.glyphicon-thumbs-up.like>
+                111
+          %a{:href => "/discussions/show"}
+            .transitionbox.item
+              .transitionimg
+                = image_tag "neco.jpg", width:"300"
+              %p
+                Title -
+                texttexttexttexttexttexttexttexttexttext
+                texttexttexttetexttext
+              .bottom
+                %i.glyphicon.glyphicon-thumbs-up.like>
+                111
+          %a{:href => "/discussions/show"}
+            .transitionbox.item
+              .transitionimg
+                = image_tag "neco.jpg", width:"300"
+              %p
+                Title -
+                texttexttexttexttexttexttexttexttexttext
+                texttexttexttetexttext
+              .bottom
+                %i.glyphicon.glyphicon-thumbs-up.like>
+                111
+    #files.tab-pane.fade{:style => "padding: 40px 150px 40px; background-color: #d3d3d3"}
+      .panel.panel-default
+        / Default panel contents
+        .panel-heading
+          Files
+        / Table
+        %table.table
+          %thead
+            %tr
+              %th
+                \#
+              %th
+                First Name
+              %th
+                Last Name
+              %th
+                Username
+          %tbody
+            %tr
+              %td
+                1
+              %td
+                Mark
+              %td
+                Otto
+              %td
+                @mdo
+            %tr
+              %td
+                2
+              %td
+                Jacob
+              %td
+                Thornton
+              %td
+                @fat
+            %tr
+              %td
+                3
+              %td
+                Larry
+              %td
+                the Bird
+              %td
+                @twitter

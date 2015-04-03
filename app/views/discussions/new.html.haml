@@ -1,0 +1,18 @@
+%div{:style => "background-color: #ffffff; height: 15%;"}
+  %p.glyphicon.glyphicon-edit{:style => " font-size: 20px; padding: 2% 2% 0"} Edit discussion
+  %br
+    %a{:href => "", :style => "padding-left: 2%; padding-bottom: 1%"} VarradoDriftTrike
+.editarea
+  %p.title Title
+  %input{:cols => "40", :name => "", :type => "text"}
+    %p.title Description
+    %form
+      %textarea{:cols => "60", :name => "description", :rows => "5", :type => "text"}
+    %button#ubox.btn.btn-default{:onClick => "location.href='edit/projects/show'", :type => "button"}
+      .glyphicon.glyphicon-home UploadImages
+    %input{:cols => "20", :type => "text"}
+      %br
+        %button#pbox.btn.btn-default{:onClick => "location.href='edit/projects/show'", :type => "button"}
+          .glyphicon.glyphicon-ok
+            Publish
+
